@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Overlapping Sound Button</title>
+    <style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent; /* or transparent */
+  }
+
+  img {
+    width: 200px; /* or whatever fixed size you want */
+    height: auto;
+    cursor: pointer;
+    display: block;
+  }
+</style>
+  </head>
+  <body>
+    <img src="https://files.catbox.moe/1y0id6.png" onclick="playSound()" alt="Play Sound" />
+    <script>
+      function playSound() {
+        const audio = new Audio("https://files.catbox.moe/2mc057.mp3");
+        audio.play();
+      }
+    </script>
+  </body>
+</html>
